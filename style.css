@@ -1,0 +1,28 @@
+
+h4{margin: 0;padding: 20px 0;}
+ul{
+	list-style: none;
+}
+
+li{
+	display: block;
+	margin: 2px auto;
+	width: 50%;
+	border: 1px solid #60c195;
+}
+
+span{
+	display: block;
+	text-align: center;
+	height: 50px;
+	line-height: 50px;
+	background: #60c195;
+	color: white;
+	cursor: pointer;
+}
+
+li > div{
+	display: none;
+	width: 100%;
+	height: 200px;
+}

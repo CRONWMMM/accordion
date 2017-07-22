@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8">
+	<title>手风琴插件</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<ul>
+		<li>
+			<span ac-bind="1">web前端工程师</span>
+			<div ac-module="1">
+				<h4>Web前端开发工程师</h4>
+				<p>1.1~3年开发经验</p>
+				<p>
+				2.需要掌握的技能：angular、React、Vue、Node</p>
+			</div>
+		</li>
+		<li>
+			<span ac-bind="2">title2</span>
+			<div ac-module="2">title2控制的模块</div>
+		</li>
+		<li>
+			<span ac-bind="3">title3</span>
+			<div ac-module="3"></div>
+		</li>
+		<li>
+			<span ac-bind="4">title4</span>
+			<div ac-module="4"></div>
+		</li>
+		<li>
+			<span ac-bind="5">title5</span>
+			<div ac-module="5"></div>
+		</li>
+	</ul>
+	<script src="jquery.min.js"></script>
+	<script src="accordion.js"></script>
+	<script>
+		$('ul').accordion({
+			selectors : {
+				binder : 'ac-bind',
+				module : 'ac-module'
+			},
+			show : 'closeall',
+			autoslide : true,
+			speed : 300
+		});
+	</script>
+</body>
+</html>
